@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Basic webpage information -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Page title -->
+    <title>Shop Collection | Nyante Luxe Nails</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- HEADER  -->
+    <header>
+
+        <div class="nav-container">
+
+            <!-- Company logo -->
+            <div class="logo-area">
+                <a href="index.html">
+                    <img src="images/Nyante Logo.png" alt="Nyante Luxe Nails Logo">
+                </a>
+            </div>
+
+            <!-- Navigation -->
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Shop Nails</a>
+                <a href="cart.html">Cart</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Register</a>
+                <a href="about.html">About Us</a>
+                <a href="invoicedata.html">InvoiceData</a>
+                <a href="userdata.html">UserData</a>
+
+        </div>
+
+    </header>
+    <h2>Customer Invoice</h2>
+
+    <hr>
+
+    <p><strong>Invoice Number:</strong> <span id="invoiceNumber"></span></p>
+
+    <p><strong>Date:</strong> <span id="invoiceDate"></span></p>
+
+    <p><strong>Customer:</strong> <span id="customerName"></span></p>
+
+    <p><strong>Shipping Address:</strong> <span id="shippingAddress"></span></p>
+
+    <p><strong>TRN:</strong> <span id="trn"></span></p>
+
+    <hr>
+
+    <table border="1" width="100%">
+
+        <thead>
+
+            <tr>
+                <th>Product</th>
+                <th>Price (J$)</th>
+                <th>Quantity</th>
+                <th>Discount</th>
+                <th>Total</th>
+            </tr>
+
+        </thead>
+
+        <tbody id="invoiceItems">
+
+        </tbody>
+
+    </table>
+
+    <br>
+
+    <p><strong>Subtotal:</strong> J$<span id="subtotal"></span></p>
+
+    <p><strong>Taxes (15%):</strong> J$<span id="tax"></span></p>
+
+    <p><strong>Total Cost:</strong> J$<span id="totalCost"></span></p>
+
+    <p><strong>Amount Paid:</strong> J$<span id="amountPaid"></span></p>
+
+    <hr>
+
+    <h3 id="message"></h3>
+
+    <button onclick="window.print()">Print Invoice</button>
+</body>
+<script src="invoice.js"></script>
+
+</html>

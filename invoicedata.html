@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Register | Nyante Luxe Nails</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="nav-container">
+
+            <div class="logo-area">
+
+                <a href="index.html">
+
+                    <img src="images/Nyante Logo.png"
+                         alt="Nyante Luxe Nails Logo">
+
+                </a>
+
+            </div>
+
+            <nav>
+
+                <a href="index.html">Home</a>
+                <a href="products.html" class="active">Shop Nails</a>
+                <a href="cart.html">Cart</a>
+                <a href="login.html">Login</a>
+                <a href="registration.html">Register</a>
+                <a href="about.html">About Us</a>
+                <a href="invoicedata.html">InvoiceData</a>
+                <a href="userdata.html">UserData</a>
+            </nav>
+
+        </div>
+
+    </header>
+    <main>
+        <h2>Search Invoice</h2>
+        <input type="text" id="searchTRN" placeholder="Enter TRN">
+
+        <button onclick="showInvoices()">
+            Search Invoice
+        </button>
+        <br><br>
+        <h2>Get User Invoices</h2>
+
+        <input type="text" id="userTRN" placeholder="Enter User TRN">
+
+        <button onclick="getUserInvoices()">
+            Get User Invoices
+        </button>
+
+        <br><br>
+        <h2>Results</h2>
+        <div id="invoiceResults">
+
+        </div>
+    </main>
+    <script src="invoicedata.js"></script>
+</body>
+</html>
