@@ -67,20 +67,20 @@ function registerUser(event) {
         }
 
         // CREATE USER OBJECT
-        let user = {
-            firstName: firstName,
-            lastName: lastName,
-            dateOfBirth: dob,
-            gender: gender,
-            phoneNumber: phone,
-            emailAddress: email,
-            trn: trn,
-            password: password,
-            dateOfRegistration: new Date().toLocaleString(),
-            cart: {},
-            invoices: []
-        };
-
+       let user = {
+    firstName: firstName,
+    lastName: lastName,
+    age: age,
+    dateOfBirth: dob,
+    gender: gender,
+    phoneNumber: phone,
+    emailAddress: email,
+    trn: trn,
+    password: password,
+    dateOfRegistration: new Date().toLocaleString(),
+    cart: {},
+    invoices: []
+};
         // APPEND USER TO ARRAY
         users.push(user);
 
