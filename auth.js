@@ -1,3 +1,19 @@
+/* CIT2011 Group Project – Nyante Luxe Nails
+
+File: auth.js
+
+Group Members:
+- Shanté Smith      | ID: 1902101
+- Romone Grant      | ID: 2405928
+- Horace Bandoo     | ID: 2306043
+- Bradley Adams     | ID: 2206964
+
+Purpose:
+This file manages user authentication for the website.
+It allows users to register, validates registration
+information, stores user data in Local Storage, authenticates
+users during login, tracks failed login attempts, and
+redirects users based on authentication status. */
 function registerUser(event) {
 
     // Stop the form from refreshing the page
