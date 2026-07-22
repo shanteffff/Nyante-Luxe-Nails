@@ -1,3 +1,21 @@
+/*
+CIT2011 Group Project – Nyante Luxe Nails
+
+File: products.js
+
+Group Members:
+- Shanté Smith      | ID: 1902101
+- Romone Grant      | ID: 2405928
+- Horace Bandoo     | ID: 2306043
+- Bradley Adams     | ID: 2206964
+
+Purpose:
+This file manages the product catalogue and shopping cart.
+It initializes products, displays products, allows users
+to add items to the cart, update quantities, remove items,
+calculate totals, and redirect users to the checkout page.
+*/
+
 // 1. Array of Product Objects (All 9 Nail Sets)
 const defaultProducts = [
   { 
