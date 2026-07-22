@@ -1,13 +1,32 @@
-function showInvoices(){
+/* CIT2011 Group Project – Nyante Luxe Nails
 
+File: invoicedata.js
+
+Group Members:
+- Shanté Smith      | ID: 1902101
+- Romone Grant      | ID: 2405928
+- Horace Bandoo     | ID: 2306043
+- Bradley Adams     | ID: 2206964
+
+Purpose:
+This file retrieves and displays stored invoices.
+It allows users to search invoices using a TRN and
+displays matching invoice information retrieved from
+Local Storage.
+*/
+
+// Searches for all invoices that match the TRN entered
+// by the administrator and displays the matching results.
+function showInvoices(){
+    // Get the TRN entered by the user.
     const searchTRN =
     document.getElementById("searchTRN").value;
 
-
+    // Retrieve all stored invoices from Local Storage.
     const invoices =
     JSON.parse(localStorage.getItem("AllInvoices")) || [];
 
-
+    // Filter invoices that match the entered TRN.
     const results =
     invoices.filter(invoice => invoice.trn === searchTRN);
 
@@ -19,6 +38,8 @@ function showInvoices(){
 
 }
 
+// Retrieves all invoices belonging to a specific user
+// based on the TRN entered and displays the results.
 function getUserInvoices(){
 
     const userTRN =
@@ -40,6 +61,8 @@ function getUserInvoices(){
 
 }
 
+// Displays the invoice details returned from the search.
+// If no invoices are found, an appropriate message is shown.
 function displayInvoices(invoices){
 
     const container =
@@ -58,7 +81,7 @@ function displayInvoices(invoices){
 
     }
 
-
+    // Display each matching invoice on the webpage.
     invoices.forEach(invoice => {
 
 
