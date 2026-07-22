@@ -14,6 +14,10 @@ It allows users to register, validates registration
 information, stores user data in Local Storage, authenticates
 users during login, tracks failed login attempts, and
 redirects users based on authentication status. */
+
+// Registers a new user, validates all input fields,
+// stores the user's information in Local Storage,
+// and displays a success or error message.
 function registerUser(event) {
 
     // Stop the form from refreshing the page
@@ -118,6 +122,10 @@ function registerUser(event) {
     }
 }
 
+// Authenticates a registered user using their TRN
+// and password, resets login attempts after a
+// successful login, and redirects the user to the
+// products page or locked page when necessary
 function loginUser(event) {
 
     event.preventDefault();
