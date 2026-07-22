@@ -1,3 +1,20 @@
+/* CIT2011 Group Project – Nyante Luxe Nails
+
+File: userdata.js
+
+Group Members:
+- Shanté Smith      | ID: 1902101
+- Romone Grant      | ID: 2405928
+- Horace Bandoo     | ID: 2306043
+- Bradley Adams     | ID: 2206964
+
+Purpose:
+This file retrieves registered user information from
+Local Storage and displays the frequency of users
+based on gender and age groups. */
+
+// Retrieves all registered users from Local Storage,
+// counts users by gender and age group, and displays
 function showUserFrequency() {
 
     // Retrieve all registered users from localStorage
