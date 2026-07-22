@@ -1,3 +1,21 @@
+/* CIT2011 Group Project – Nyante Luxe Nails
+
+File: invoice.js
+
+Group Members:
+- Shanté Smith      | ID: 1902101
+- Romone Grant      | ID: 2405928
+- Horace Bandoo     | ID: 2306043
+- Bradley Adams     | ID: 2206964
+
+Purpose:
+This file generates the customer's invoice after a
+successful checkout. It retrieves the customer's
+shopping cart and checkout information, calculates
+the subtotal, tax, and total amount, stores the
+invoice in Local Storage, and displays the invoice
+details on the webpage. */
+
 // Retrieve stored data
 const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
