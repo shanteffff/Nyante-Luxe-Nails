@@ -1,3 +1,21 @@
+/*
+CIT2011 Group Project – Nyante Luxe Nails
+
+File: checkout.js
+
+Group Members:
+- Shanté Smith      | ID: 1902101
+- Romone Grant      | ID: 2405928
+- Horace Bandoo     | ID: 2306043
+- Bradley Adams     | ID: 2206964
+
+Purpose:
+This file manages the checkout process. It displays
+the customer's shopping cart, validates customer
+information, processes the checkout, stores checkout
+details in Local Storage, and redirects the user to
+the invoice page.
+*/
 // Retrieve shopping cart
 let cart = JSON.parse(localStorage.getItem("cart")) || [];
 
